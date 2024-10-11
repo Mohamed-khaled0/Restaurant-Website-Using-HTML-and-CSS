@@ -27,11 +27,23 @@ body {
     margin-top: 30px;
   color: white;
   border: 1px solid white;
+  transition: 0.3s;
 }
 
-.btn-primary:hover {
+.btn-secondary {
+color: white;
+background: #383848;
+margin-top: 30px;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
   background-color: #dca93a;
 }
+
+
 /* Header Start */
 header {
   height: 100vh;
@@ -67,7 +79,7 @@ a {
 }
 
 .navbar ul li a:hover {
-  border-bottom: 2px solid #dca93a;
+  border-bottom: 1px solid #dca93a;
 }
 
 header .content {
@@ -99,5 +111,112 @@ header::before {
 }
 header * {
   z-index: 1000;
+  transition: 0.3s;
 }
 /* Header End */
+
+
+/* About Start */
+
+
+.container {
+    max-width:  1100px;
+    margin: auto;
+}
+
+.about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .title,
+.offers .title{
+text-align: center;
+margin-bottom: 4rem;
+}
+
+.about h2,
+.offers h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about h2{
+    color: #383848;
+
+}
+.about .title p{
+    color: #9a9a9a;
+    font-weight: bold;
+}
+
+.about  .about-content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about  .about-content img{
+    width: 450px;
+}
+
+.about  .about-content p{
+    color:#9a9a9a ;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
+}
+
+/* About End */
+
+/* Offers Start  */
+
+.offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url('img/offer-background.jpg') center center/cover fixed ;
+}
+
+.offers h2{
+    margin-top: 10px;
+color: #dca93a;
+}
+
+.offers .title p{
+    font-weight: bold;
+    color: white;
+}
+
+.offers .offers-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.offers .offers-items img{
+    width: 200px;
+}
+.offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px;
+}
+
+.offers .offers-items p{
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+
+.offers .offers-items span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* Offers End  */
