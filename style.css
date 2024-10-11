@@ -24,25 +24,24 @@ body {
 }
 
 .btn-primary {
-    margin-top: 30px;
+  margin-top: 30px;
   color: white;
   border: 1px solid white;
   transition: 0.3s;
 }
 
 .btn-secondary {
-color: white;
-background: #383848;
-margin-top: 30px;
+  color: white;
+  background: #383848;
+  margin-top: 30px;
   border: 1px solid white;
   transition: 0.3s;
 }
 
 .btn-primary:hover,
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: #dca93a;
 }
-
 
 /* Header Start */
 header {
@@ -115,108 +114,159 @@ header * {
 }
 /* Header End */
 
-
 /* About Start */
 
-
 .container {
-    max-width:  1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.about{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .title,
-.offers .title{
-text-align: center;
-margin-bottom: 4rem;
+.offers .title,
+.menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .about h2,
-.offers h2{
-    font-size: 40px;
-    margin-bottom: 20px;
+.offers h2,
+.menu h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.about h2{
-    color: #383848;
-
+.about h2,
+.menu h2 {
+  color: #383848;
 }
-.about .title p{
-    color: #9a9a9a;
-    font-weight: bold;
-}
-
-.about  .about-content{
-    display: flex;
-    justify-content: space-between;
-
-}
-.about  .about-content img{
-    width: 450px;
+.about .title p,
+.menu .title p {
+  color: #9a9a9a;
+  font-weight: bold;
 }
 
-.about  .about-content p{
-    color:#9a9a9a ;
-    margin-right: 7rem;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+.about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-content img {
+  width: 450px;
+}
 
+.about .about-content p {
+  color: #9a9a9a;
+  margin-right: 7rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 /* About End */
 
 /* Offers Start  */
 
-.offers{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    background: url('img/offer-background.jpg') center center/cover fixed ;
+.offers {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  background: url("img/offer-background.jpg") center center/cover fixed;
 }
 
-.offers h2{
-    margin-top: 10px;
-color: #dca93a;
+.offers h2 {
+  margin-top: 10px;
+  color: #dca93a;
 }
 
-.offers .title p{
-    font-weight: bold;
-    color: white;
+.offers .title p {
+  font-weight: bold;
+  color: white;
 }
 
 .offers .offers-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
-.offers .offers-items img{
-    width: 200px;
+.offers .offers-items img {
+  width: 200px;
 }
-.offers .offers-items h3{
-    font-size: 25px;
-    margin: 15px;
-}
-
-.offers .offers-items p{
-    padding: 0 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
+.offers .offers-items h3 {
+  font-size: 25px;
+  margin: 15px;
 }
 
+.offers .offers-items p {
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
 
-.offers .offers-items span{
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 10px;
+.offers .offers-items span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 /* Offers End  */
+
+/* Menu Start */
+.menu {
+  background: #f4f4f4;
+  padding: 4rem;
+}
+
+.menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.menu .menu-items .menu-item img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.menu .menu-items .menu-item h3 {
+  color: #383848;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.menu .menu-items .menu-item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu .btn a {
+  color: #fff;
+}
+
+.menu .btn {
+  display: block;
+  background: #dca93a;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu .btn:hover {
+  background: #383848;
+}
+
+/* Menu End */
